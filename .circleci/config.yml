@@ -10,7 +10,8 @@ jobs:
     docker:
       - image : "cimg/node:14.15"
     steps:
-      - node/install
+      - node/install:
+          node-version: '14.15'
       - checkout
       # doing all continuous integration steps 
       # installing all dependencies
@@ -52,9 +53,13 @@ jobs:
       - aws-cli/setup
       - checkout
       - run:
-          name: Deploy the app
+          name: Deploy Front-End
           command: |
-            npm run deploy
+            npm run frontend:deploy
+      - run:
+          name: Deploy Back-End
+          command: |
+          npm run api:deploy
 workflows:
   udagram:
     jobs:
