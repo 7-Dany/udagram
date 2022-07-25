@@ -44,13 +44,13 @@ jobs:
       # forth building the app for both for frontend and backend
       - run:
         # building the frontend
-        name: Front-End build
-        command: |
-          npm run frontend:build
+          name: Front-End build
+          command: |
+            npm run frontend:build
       - run:
-        name: Back-End build
-        command: |
-          npm run api:build
+          name: Back-End build
+          command: |
+            npm run api:build
   deploy:
     # deploy the application
     docker:
