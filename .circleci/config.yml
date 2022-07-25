@@ -13,7 +13,7 @@ jobs:
       - node/install
       - checkout
       # doing all continuous integration steps 
-      # first installing all dependencies
+      # installing all dependencies
       - run:
         # installing all dependcies for frontend
           name: Front-End install
@@ -24,24 +24,13 @@ jobs:
           name: Back-End install
           command: |
             npm run api:install
-      # second linting by calling eslint and prettier to enforce consistancy in the application
+      # linting by calling eslint and prettier to enforce consistancy in the application
       - run:
           # linting the frontend code
           name: Front-End linting
           command: |
             npm run frontend:lint
-      # third doing all tests like (end to end, integration or unit testing)
-      - run:
-          # testing the frontend end to end
-          name: Front-End e2e testing
-          command: |
-            npm run frontend:e2e
-      - run: 
-          # testing the frontend unit testing
-          name: Front-End unit testing
-          command: |
-            npm run frontend:test
-      # forth building the app for both for frontend and backend
+      # building the app for both for frontend and backend
       - run:
         # building the frontend
           name: Front-End build
