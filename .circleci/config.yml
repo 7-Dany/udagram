@@ -1,0 +1,84 @@
+version: 2.1
+orbs:
+  # orbs contain all requirements for the project 
+  node: circleci/node@5.0.2
+  eb: circleci/aws-elastic-beanstalk@2.0.1
+  aws-cli: circleci/aws-cli@3.1.1
+jobs:
+  build:
+    # building the application to make it ready for deployment
+    docker:
+      - image : "cimg/node:14.15"
+    steps:
+      - node/install
+      - checkout
+      # doing all continuous integration steps 
+      # first installing all dependencies
+      - run:
+        # installing all dependcies for frontend
+          name: Front-End install
+          command: |
+            npm run frontend:install
+      - run:
+        # installing all dependcies for backend
+          name: Back-End install
+          command: |
+            npm run api:install
+      # second linting by calling eslint and prettier to enforce consistancy in the application
+      - run:
+          # linting the frontend code
+          name: Front-End linting
+          command: |
+            npm run frontend:lint
+      # third doing all tests like (end to end, integration or unit testing)
+      - run:
+          # testing the frontend end to end
+          name: Front-End e2e testing
+          command: |
+            npm run frontend:e2e
+      - run: 
+          # testing the frontend unit testing
+          name: Front-End unit testing
+          command: |
+            npm run frontend:test
+      # forth building the app for both for frontend and backend
+      - run:
+        # building the frontend
+        name: Front-End build
+        command: |
+          npm run frontend:build
+      - run:
+        name: Back-End build
+        command: |
+          npm run api:build
+  deploy:
+    # deploy the application
+    docker:
+      - image: "cimg/base:stable"
+    steps:
+      # setup the node version, aws cli and elastic beanstalk
+      - node/install:
+          node-version: '14.15'
+      - eb/setup
+      - aws-cli/setup
+      - checkout
+      - run:
+          name: Deploy the app
+          command: |
+            npm run deploy
+workflows:
+  udagram:
+    jobs:
+      - build
+      - hold:
+          filters:
+            branches:
+              only:
+                - master
+          type: approval
+          requires:
+            - build
+      - deploy:
+          requires:
+            - hold
+    
