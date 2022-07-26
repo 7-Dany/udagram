@@ -17,16 +17,16 @@ jobs:
       # doing all continuous integration steps 
       # installing all dependencies
       - run:
-        # installing all dependcies for frontend
+        # installing all dependencies for frontend
           name: Front-End install
           command: |
             npm run frontend:install
       - run:
-        # installing all dependcies for backend
+        # installing all dependencies for backend
           name: Back-End install
           command: |
             npm run api:install
-      # linting by calling eslint and prettier to enforce consistancy in the application
+      # linting by calling eslint and prettier to enforce consistency in the application
       - run:
           # linting the frontend code
           name: Front-End linting
@@ -47,7 +47,7 @@ jobs:
     docker:
       - image: "cimg/base:stable"
     steps:
-      # setup the node version, aws cli and elastic beanstalk
+      # set up the node version, aws cli and elastic beanstalk
       - node/install:
           node-version: '14.15'
       - eb/setup

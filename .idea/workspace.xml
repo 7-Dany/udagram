@@ -2,12 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3da5197-e426-4d41-913e-fbbcd88811e3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/udagram/set_env.sh" beforeDir="false" afterPath="$PROJECT_DIR$/udagram/set_env.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udagram/udagram-api/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/udagram/udagram-api/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udagram/udagram-frontend/bin/deploy.sh" beforeDir="false" afterPath="$PROJECT_DIR$/udagram/udagram-frontend/bin/deploy.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udagram/udagram-frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/udagram/udagram-frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udagram/udagram-frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/udagram/udagram-frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/udagram/udagram-frontend/src/environments/environment.prod.ts" beforeDir="false" afterPath="$PROJECT_DIR$/udagram/udagram-frontend/src/environments/environment.prod.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/images/All Buckets.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/images/All databases.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/images/EB config.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/images/EB.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/images/RDS-Instance.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/images/circleci build.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/images/circleci deploy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/images/circleci jobs.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/images/my bucket.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/images/udagram.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.circleci/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.circleci/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,15 +40,21 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/speed/Desktop/nd0067-c4-deployment-process-project-starter/docs/images&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\speed\\Desktop\\nd0067-c4-deployment-process-project-starter\\udagram\\udagram-frontend\\node_modules\\typescript\\lib&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\speed\\Desktop\\nd0067-c4-deployment-process-project-starter\\udagram\\udagram-api\\node_modules\\typescript\\lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\speed\Desktop\nd0067-c4-deployment-process-project-starter\docs\images" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="set_env.sh" type="ShConfigurationType" temporary="true">
       <option name="SCRIPT_TEXT" value="" />
@@ -76,10 +88,23 @@
       <workItem from="1657068288684" duration="632000" />
       <workItem from="1657080067298" duration="2294000" />
       <workItem from="1657126998640" duration="651000" />
+      <workItem from="1658840093998" duration="5902000" />
+      <workItem from="1658850520890" duration="1105000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
