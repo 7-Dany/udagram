@@ -22,7 +22,7 @@ In config.yml we specify many thing
 4. workflow, here we specify the order that we need our job to run into
 
 __Here all jops that listed from pipeline will run in order build first then deploy__
-![CircleCi Jobs](images/circleci%20jobs.png)
+![CircleCi Jobs](images/CircleCi%20jops.png)
 
 __Here after the build jop finished__
 ![CircleCi Build](images/circleci%20build.png)
