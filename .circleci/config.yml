@@ -8,7 +8,7 @@ jobs:
   build:
     # building the application to make it ready for deployment
     docker:
-      - image : "cimg/node:14.15"
+      - image: "cimg/node:14.15"
     steps:
       - node/install:
           node-version: '14.15'
@@ -17,12 +17,12 @@ jobs:
       # doing all continuous integration steps 
       # installing all dependencies
       - run:
-        # installing all dependencies for frontend
+          # installing all dependencies for frontend
           name: Front-End install
           command: |
             npm run frontend:install
       - run:
-        # installing all dependencies for backend
+          # installing all dependencies for backend
           name: Back-End install
           command: |
             npm run api:install
@@ -34,7 +34,7 @@ jobs:
             npm run frontend:lint
       # building the app for both for frontend and backend
       - run:
-        # building the frontend
+          # building the frontend
           name: Front-End build
           command: |
             npm run frontend:build
@@ -65,9 +65,14 @@ workflows:
   udagram:
     jobs:
       - build
+      - hold:
+          filters:
+            branches:
+              only:
+                - main
       - deploy:
           requires:
-            - build
+            - hold
         
 
           

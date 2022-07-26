@@ -1,0 +1,1 @@
+eb setenv AWS_BUCKET=arn:aws:s3:::dany-udagram AWS_PROFILE=default AWS_REGION=us-east-1 JWT_SECRET=mysecretstring POSTGRES_DB=postgres POSTGRES_HOST=database-1.ccxwpzz86swy.us-east-1.rds.amazonaws.com POSTGRES_PASSWORD=postgres POSTGRES_USERNAME=postgres

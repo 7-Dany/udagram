@@ -1,19 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b3da5197-e426-4d41-913e-fbbcd88811e3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/docs/images/All Buckets.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/images/All databases.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/images/EB config.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/images/EB.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/images/RDS-Instance.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/images/circleci build.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/images/circleci deploy.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/images/circleci jobs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/images/my bucket.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/images/udagram.png" afterDir="false" />
+    <list default="true" id="b3da5197-e426-4d41-913e-fbbcd88811e3" name="Changes" comment="Creating documents">
+      <change afterPath="$PROJECT_DIR$/udagram/udagram-api/bin/deploy.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.circleci/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.circleci/config.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udagram/udagram-api/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/udagram/udagram-api/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,8 +82,17 @@
       <workItem from="1657080067298" duration="2294000" />
       <workItem from="1657126998640" duration="651000" />
       <workItem from="1658840093998" duration="5902000" />
-      <workItem from="1658850520890" duration="1105000" />
+      <workItem from="1658850520890" duration="1835000" />
+      <workItem from="1658859168725" duration="702000" />
     </task>
+    <task id="LOCAL-00001" summary="Creating documents">
+      <created>1658851790823</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1658851790823</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -106,5 +108,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Creating documents" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creating documents" />
   </component>
 </project>
