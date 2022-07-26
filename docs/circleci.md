@@ -31,4 +31,4 @@ __Here after the deploy jop finished__
 ![CirceCi Deploy](images/circleci%20deploy.png)
 
 __Here the results of after deployment process had run successfully__
-![CircleCi Run](images/CircleCi%20out.png)
+![CircleCi Run](images/circleci%20out.png)
