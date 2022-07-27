@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b3da5197-e426-4d41-913e-fbbcd88811e3" name="Changes" comment="changing circleci out" />
+    <list default="true" id="b3da5197-e426-4d41-913e-fbbcd88811e3" name="Changes" comment="updating config.yml">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/udagram/udagram-api/bin/deploy.sh" beforeDir="false" afterPath="$PROJECT_DIR$/udagram/udagram-api/bin/deploy.sh" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -78,6 +81,8 @@
       <workItem from="1658840093998" duration="5902000" />
       <workItem from="1658850520890" duration="1835000" />
       <workItem from="1658859168725" duration="2639000" />
+      <workItem from="1658893924599" duration="105000" />
+      <workItem from="1658908889205" duration="321000" />
     </task>
     <task id="LOCAL-00001" summary="Creating documents">
       <created>1658851790823</created>
@@ -121,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658861429115</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="updating config.yml">
+      <created>1658894024319</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1658894024319</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,9 +153,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Creating documents" />
     <MESSAGE value="Creating deploy.sh and updating config.yml" />
-    <MESSAGE value="updating config.yml" />
     <MESSAGE value="updating images" />
     <MESSAGE value="changing circleci out" />
-    <option name="LAST_COMMIT_MESSAGE" value="changing circleci out" />
+    <MESSAGE value="updating config.yml" />
+    <option name="LAST_COMMIT_MESSAGE" value="updating config.yml" />
   </component>
 </project>
